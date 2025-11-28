@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../Style/FormBuilder.css";
 
-import ConditionalLogicModal from "../Pages/conditionalLogicBuilder";
+import ConditionalLogicModal from "./conditionalLogicBuilder";
 
 export default function FormBuilder() {
   const navigate = useNavigate();

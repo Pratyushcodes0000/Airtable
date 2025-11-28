@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../Style/ConditionalLogicBuilder.css';
+import '../Style/conditionalLogicBuilder.css';
 
 const ConditionalLogicModal = ({ open, onClose, fields = [], onSave }) => {
   const emptyRule = {
