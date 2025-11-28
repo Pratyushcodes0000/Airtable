@@ -3,7 +3,7 @@ import "../Style/Login.css";
 
 export default function LandingPage() {
   const handleLogin = () => {
-    window.location.href = "http://localhost:8000/api/auth/airtable/login";
+    window.location.href = "https://airtable-backend-production.up.railway.app/api/auth/airtable/login";
   };
 
   return (

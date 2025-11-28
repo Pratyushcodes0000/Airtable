@@ -13,7 +13,7 @@ export default function FormDashboard() {
   useEffect(() => {
     async function loadForms() {
       try {
-        const res = await fetch("http://localhost:8000/api/my-forms", {
+        const res = await fetch("https://airtable-backend-production.up.railway.app/api/my-forms", {
           headers: {
             Authorization: `Bearer ${jwt}`,
           },

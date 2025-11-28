@@ -77,7 +77,7 @@ export default function FormBuilder() {
       questions
     };
 
-    const res = await fetch("http://localhost:8000/api/forms", {
+    const res = await fetch("https://airtable-backend-production.up.railway.app/api/forms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

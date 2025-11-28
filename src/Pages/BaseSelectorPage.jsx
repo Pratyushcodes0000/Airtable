@@ -13,7 +13,7 @@ export default function BaseSelector() {
   useEffect(() => {
     async function loadBases() {
       try {
-  const res = await fetch("http://localhost:8000/api/airtable/bases", {
+  const res = await fetch("https://airtable-backend-production.up.railway.app/api/airtable/bases", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${jwt}`,

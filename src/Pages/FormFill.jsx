@@ -10,7 +10,7 @@ const FormFill = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/api/forms/${formId}`, {
+        const res = await fetch(`https://airtable-backend-production.up.railway.app/api/forms/${formId}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("jwt")}`,
           },
@@ -32,7 +32,7 @@ const FormFill = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch(`http://localhost:8000/api/forms/${formId}/submit`, {
+    const res = await fetch(`https://airtable-backend-production.up.railway.app/api/forms/${formId}/submit`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

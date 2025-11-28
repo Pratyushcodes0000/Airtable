@@ -14,7 +14,7 @@ console.log("JWT from localStorage:", jwt);
     async function loadTables() {
       try {
         const res = await fetch(
-          `http://localhost:8000/api/airtable/bases/${baseId}/tables`,
+          `https://airtable-backend-production.up.railway.app/api/airtable/bases/${baseId}/tables`,
           {
             method: "GET",
             headers: {

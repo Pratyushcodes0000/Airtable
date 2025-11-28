@@ -14,7 +14,7 @@ export default function FieldSelector() {
     async function loadFields() {
       try {
         const res = await fetch(
-          `http://localhost:8000/api/airtable/bases/${baseId}/tables/${tableId}/fields`,
+          `https://airtable-backend-production.up.railway.app/api/airtable/bases/${baseId}/tables/${tableId}/fields`,
           {
             headers: {
               Authorization: `Bearer ${jwt}`,
