@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "../Style/ResponseListingPage.css";
 
 const ResponseListingPage = () => {
+  const { formId } = useParams();
   const [responses, setResponses] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const fetchResponses = async () => {
     try {
       const res = await fetch(
-        `https://airtable-backend-production.up.railway.app/api/forms/${id}/responses`,
+        `https://airtable-backend-production.up.railway.app/api/forms/${formId}/responses`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("jwt")}`,

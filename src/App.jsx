@@ -41,7 +41,7 @@ const App = () => {
 
             <Route path="/forms/:formId/responses" element={<FormFill />} />
 
-            <Route path="/responses" element={<ResponseListing />} />
+            <Route path="/responses/:formId" element={<ResponseListing />} />
                 {/* Preview Form */}
             {/* <Route path="/preview/:formId" element={<FormPreviewPage />} /> */}
 

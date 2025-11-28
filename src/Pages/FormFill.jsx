@@ -42,7 +42,7 @@ const FormFill = () => {
         body: JSON.stringify({ answers: responses }),
     });
     console.log("Submitted:", responses);
-    navigate('/responses')
+    navigate(`/responses/${formId}`);
   };
 
   if (!form) return <p>Loading form...</p>;
