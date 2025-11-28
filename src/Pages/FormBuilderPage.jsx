@@ -152,8 +152,8 @@ export default function FormBuilder() {
       <ConditionalLogicModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
-        fields={questions}             // you can target ANY field
-        onSave={saveLogicRules}        // save into the correct question
+        fields={questions}             
+        onSave={saveLogicRules}        
       />
     </div>
   );

@@ -31,7 +31,7 @@ export default function OAuthCallback() {
 
       // OPTIONAL: Fetch user profile using your backend
       try {
-        const res = await fetch("http://localhost:8000/api/auth/me", {
+        const res = await fetch("https://airtable-backend-production.up.railway.app/api/auth/me", {
           headers: {
             Authorization: `Bearer ${jwt}`,
           },
