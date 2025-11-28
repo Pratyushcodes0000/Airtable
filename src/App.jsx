@@ -20,7 +20,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
               {/* Landing / Auth */}
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/oauth/callback" element={<OAuthCallback />} />
             <Route path="/dashboard" element={<Dashboard />} />
 
