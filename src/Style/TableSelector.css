@@ -1,0 +1,57 @@
+.table-selector-page {
+  padding: 50px 30px;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+/* Grid */
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 240px));
+  gap: 28px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+/* modern table card */
+.table-card {
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #fafafa;
+  cursor: pointer;
+
+  transition: transform 0.18s ease, 
+              border-color 0.18s ease, 
+              box-shadow 0.18s ease,
+              background 0.18s ease;
+}
+
+/* hover effect */
+.table-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.table-card h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.table-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}

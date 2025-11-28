@@ -1,0 +1,75 @@
+.dashboard-container {
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.dashboard-loading,
+.dashboard-error {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.dashboard-error {
+  color: #d9534f;
+}
+
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.form-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+.form-meta {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-date {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #999;
+}
+
+.form-button {
+  margin-top: 16px;
+  background: #2f80ed;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.form-button:hover {
+  background: #1366d6;
+}
