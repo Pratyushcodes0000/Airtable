@@ -12,6 +12,7 @@ import FormBuilderPage from "./Pages/FormBuilderPage";
 import Dashboard from "./Pages/Dashboard";
 import ViewFormDetails from "./Pages/ViewFormDetails";
 import FormFill from "./Pages/FormFill";
+import ResponseListing from "./Pages/ResponseListingPage";
 
 const App = () => {
   return <div>
@@ -39,6 +40,8 @@ const App = () => {
             <Route path="/form/:formId" element={<ViewFormDetails />} />
 
             <Route path="/forms/:formId/responses" element={<FormFill />} />
+
+            <Route path="/responses" element={<ResponseListing />} />
                 {/* Preview Form */}
             {/* <Route path="/preview/:formId" element={<FormPreviewPage />} /> */}
 

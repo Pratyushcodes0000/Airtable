@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate,useParams } from "react-router-dom";
 import "../Style/FormFill.css";
 
 const FormFill = () => {
+  const navigate = useNavigate();
   const { formId } = useParams();
   const [form, setForm] = useState(null);
   const [responses, setResponses] = useState({});
@@ -41,6 +42,7 @@ const FormFill = () => {
         body: JSON.stringify({ answers: responses }),
     });
     console.log("Submitted:", responses);
+    navigate('/responses')
   };
 
   if (!form) return <p>Loading form...</p>;
